@@ -40,4 +40,42 @@ module adder_32bit (
 
 endmodule
 
-// 32 разрядное ариметико-логическое устройство Конец
+module alu(
+
+    input wire [31:0] a,           
+    input wire [31:0] b,           
+    input wire [3:0]  alu_ctrl,    
+    output reg [31:0] result,      
+    output wire       zero
+
+);
+
+    wire [31:0] add_result;
+    wire        adder_cout;
+    wire [31:0] b_for_sub;
+    wire        cin_for_sub;
+
+    assign b_for_sub   = (alu_ctrl == 4'b0001) ? ~b : b;
+    assign cin_for_sub = (alu_ctrl == 4'b0001) ? 1'b1 : 1'b0;
+
+    adder_32bit adder_inst(
+            .a(a),
+            .b(b_for_sub),
+            .c_in(cin_for_sub),
+            .s(add_result),
+            .c_out(adder_cout)
+    );
+
+    always @(*) begin
+        case(alu_ctrl)
+            4'b0000: result = add_result;     // ADD
+            4'b0001: result = add_result;     // SUB
+            4'b0010: result = a & b;          // AND
+            4'b0011: result = a | b;          // OR
+            default: result = 32'b0;
+        endcase
+    end
+    assign zero = (result == 32'b0);
+endmodule;
+
+// 32 разрядное ариметико-логическое устройство конец
