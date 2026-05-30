@@ -1,5 +1,5 @@
 $date
-	Sun May 24 20:20:07 2026
+	Tue May 26 17:02:55 2026
 $end
 $version
 	Icarus Verilog
@@ -7,337 +7,347 @@ $end
 $timescale
 	1ps
 $end
-$scope module adder_32bit_tb $end
-$var wire 32 ! s [31:0] $end
-$var wire 1 " c_out $end
-$var reg 32 # a [31:0] $end
+$scope module alu_tb $end
+$var wire 32 ! result [31:0] $end
+$var reg 32 " a [31:0] $end
+$var reg 4 # alu_ctrl [3:0] $end
 $var reg 32 $ b [31:0] $end
-$var reg 1 % c_in $end
-$scope module uut $end
-$var wire 32 & a [31:0] $end
+$scope module test_alu $end
+$var wire 32 % a [31:0] $end
+$var wire 4 & alu_ctrl [3:0] $end
 $var wire 32 ' b [31:0] $end
-$var wire 1 % c_in $end
-$var wire 32 ( s [31:0] $end
-$var wire 33 ) carry [32:0] $end
-$var wire 1 " c_out $end
+$var wire 1 ( zero $end
+$var wire 1 ) cin_for_sub $end
+$var wire 32 * b_for_sub [31:0] $end
+$var wire 1 + adder_cout $end
+$var wire 32 , add_result [31:0] $end
+$var reg 32 - result [31:0] $end
+$scope module adder_inst $end
+$var wire 32 . a [31:0] $end
+$var wire 32 / b [31:0] $end
+$var wire 1 ) c_in $end
+$var wire 32 0 s [31:0] $end
+$var wire 33 1 carry [32:0] $end
+$var wire 1 + c_out $end
 $scope begin full_adder[0] $end
-$var parameter 2 * i $end
+$var parameter 2 2 i $end
 $scope module bit $end
-$var wire 1 + a $end
-$var wire 1 , b $end
-$var wire 1 - c_in $end
-$var wire 1 . c_out $end
-$var wire 1 / s $end
+$var wire 1 3 a $end
+$var wire 1 4 b $end
+$var wire 1 5 c_in $end
+$var wire 1 6 c_out $end
+$var wire 1 7 s $end
 $upscope $end
 $upscope $end
 $scope begin full_adder[1] $end
-$var parameter 2 0 i $end
+$var parameter 2 8 i $end
 $scope module bit $end
-$var wire 1 1 a $end
-$var wire 1 2 b $end
-$var wire 1 3 c_in $end
-$var wire 1 4 c_out $end
-$var wire 1 5 s $end
+$var wire 1 9 a $end
+$var wire 1 : b $end
+$var wire 1 ; c_in $end
+$var wire 1 < c_out $end
+$var wire 1 = s $end
 $upscope $end
 $upscope $end
 $scope begin full_adder[2] $end
-$var parameter 3 6 i $end
+$var parameter 3 > i $end
 $scope module bit $end
-$var wire 1 7 a $end
-$var wire 1 8 b $end
-$var wire 1 9 c_in $end
-$var wire 1 : c_out $end
-$var wire 1 ; s $end
+$var wire 1 ? a $end
+$var wire 1 @ b $end
+$var wire 1 A c_in $end
+$var wire 1 B c_out $end
+$var wire 1 C s $end
 $upscope $end
 $upscope $end
 $scope begin full_adder[3] $end
-$var parameter 3 < i $end
+$var parameter 3 D i $end
 $scope module bit $end
-$var wire 1 = a $end
-$var wire 1 > b $end
-$var wire 1 ? c_in $end
-$var wire 1 @ c_out $end
-$var wire 1 A s $end
+$var wire 1 E a $end
+$var wire 1 F b $end
+$var wire 1 G c_in $end
+$var wire 1 H c_out $end
+$var wire 1 I s $end
 $upscope $end
 $upscope $end
 $scope begin full_adder[4] $end
-$var parameter 4 B i $end
+$var parameter 4 J i $end
 $scope module bit $end
-$var wire 1 C a $end
-$var wire 1 D b $end
-$var wire 1 E c_in $end
-$var wire 1 F c_out $end
-$var wire 1 G s $end
+$var wire 1 K a $end
+$var wire 1 L b $end
+$var wire 1 M c_in $end
+$var wire 1 N c_out $end
+$var wire 1 O s $end
 $upscope $end
 $upscope $end
 $scope begin full_adder[5] $end
-$var parameter 4 H i $end
+$var parameter 4 P i $end
 $scope module bit $end
-$var wire 1 I a $end
-$var wire 1 J b $end
-$var wire 1 K c_in $end
-$var wire 1 L c_out $end
-$var wire 1 M s $end
+$var wire 1 Q a $end
+$var wire 1 R b $end
+$var wire 1 S c_in $end
+$var wire 1 T c_out $end
+$var wire 1 U s $end
 $upscope $end
 $upscope $end
 $scope begin full_adder[6] $end
-$var parameter 4 N i $end
+$var parameter 4 V i $end
 $scope module bit $end
-$var wire 1 O a $end
-$var wire 1 P b $end
-$var wire 1 Q c_in $end
-$var wire 1 R c_out $end
-$var wire 1 S s $end
+$var wire 1 W a $end
+$var wire 1 X b $end
+$var wire 1 Y c_in $end
+$var wire 1 Z c_out $end
+$var wire 1 [ s $end
 $upscope $end
 $upscope $end
 $scope begin full_adder[7] $end
-$var parameter 4 T i $end
+$var parameter 4 \ i $end
 $scope module bit $end
-$var wire 1 U a $end
-$var wire 1 V b $end
-$var wire 1 W c_in $end
-$var wire 1 X c_out $end
-$var wire 1 Y s $end
+$var wire 1 ] a $end
+$var wire 1 ^ b $end
+$var wire 1 _ c_in $end
+$var wire 1 ` c_out $end
+$var wire 1 a s $end
 $upscope $end
 $upscope $end
 $scope begin full_adder[8] $end
-$var parameter 5 Z i $end
+$var parameter 5 b i $end
 $scope module bit $end
-$var wire 1 [ a $end
-$var wire 1 \ b $end
-$var wire 1 ] c_in $end
-$var wire 1 ^ c_out $end
-$var wire 1 _ s $end
+$var wire 1 c a $end
+$var wire 1 d b $end
+$var wire 1 e c_in $end
+$var wire 1 f c_out $end
+$var wire 1 g s $end
 $upscope $end
 $upscope $end
 $scope begin full_adder[9] $end
-$var parameter 5 ` i $end
+$var parameter 5 h i $end
 $scope module bit $end
-$var wire 1 a a $end
-$var wire 1 b b $end
-$var wire 1 c c_in $end
-$var wire 1 d c_out $end
-$var wire 1 e s $end
+$var wire 1 i a $end
+$var wire 1 j b $end
+$var wire 1 k c_in $end
+$var wire 1 l c_out $end
+$var wire 1 m s $end
 $upscope $end
 $upscope $end
 $scope begin full_adder[10] $end
-$var parameter 5 f i $end
+$var parameter 5 n i $end
 $scope module bit $end
-$var wire 1 g a $end
-$var wire 1 h b $end
-$var wire 1 i c_in $end
-$var wire 1 j c_out $end
-$var wire 1 k s $end
+$var wire 1 o a $end
+$var wire 1 p b $end
+$var wire 1 q c_in $end
+$var wire 1 r c_out $end
+$var wire 1 s s $end
 $upscope $end
 $upscope $end
 $scope begin full_adder[11] $end
-$var parameter 5 l i $end
+$var parameter 5 t i $end
 $scope module bit $end
-$var wire 1 m a $end
-$var wire 1 n b $end
-$var wire 1 o c_in $end
-$var wire 1 p c_out $end
-$var wire 1 q s $end
+$var wire 1 u a $end
+$var wire 1 v b $end
+$var wire 1 w c_in $end
+$var wire 1 x c_out $end
+$var wire 1 y s $end
 $upscope $end
 $upscope $end
 $scope begin full_adder[12] $end
-$var parameter 5 r i $end
+$var parameter 5 z i $end
 $scope module bit $end
-$var wire 1 s a $end
-$var wire 1 t b $end
-$var wire 1 u c_in $end
-$var wire 1 v c_out $end
-$var wire 1 w s $end
+$var wire 1 { a $end
+$var wire 1 | b $end
+$var wire 1 } c_in $end
+$var wire 1 ~ c_out $end
+$var wire 1 !" s $end
 $upscope $end
 $upscope $end
 $scope begin full_adder[13] $end
-$var parameter 5 x i $end
+$var parameter 5 "" i $end
 $scope module bit $end
-$var wire 1 y a $end
-$var wire 1 z b $end
-$var wire 1 { c_in $end
-$var wire 1 | c_out $end
-$var wire 1 } s $end
+$var wire 1 #" a $end
+$var wire 1 $" b $end
+$var wire 1 %" c_in $end
+$var wire 1 &" c_out $end
+$var wire 1 '" s $end
 $upscope $end
 $upscope $end
 $scope begin full_adder[14] $end
-$var parameter 5 ~ i $end
+$var parameter 5 (" i $end
 $scope module bit $end
-$var wire 1 !" a $end
-$var wire 1 "" b $end
-$var wire 1 #" c_in $end
-$var wire 1 $" c_out $end
-$var wire 1 %" s $end
+$var wire 1 )" a $end
+$var wire 1 *" b $end
+$var wire 1 +" c_in $end
+$var wire 1 ," c_out $end
+$var wire 1 -" s $end
 $upscope $end
 $upscope $end
 $scope begin full_adder[15] $end
-$var parameter 5 &" i $end
+$var parameter 5 ." i $end
 $scope module bit $end
-$var wire 1 '" a $end
-$var wire 1 (" b $end
-$var wire 1 )" c_in $end
-$var wire 1 *" c_out $end
-$var wire 1 +" s $end
+$var wire 1 /" a $end
+$var wire 1 0" b $end
+$var wire 1 1" c_in $end
+$var wire 1 2" c_out $end
+$var wire 1 3" s $end
 $upscope $end
 $upscope $end
 $scope begin full_adder[16] $end
-$var parameter 6 ," i $end
+$var parameter 6 4" i $end
 $scope module bit $end
-$var wire 1 -" a $end
-$var wire 1 ." b $end
-$var wire 1 /" c_in $end
-$var wire 1 0" c_out $end
-$var wire 1 1" s $end
+$var wire 1 5" a $end
+$var wire 1 6" b $end
+$var wire 1 7" c_in $end
+$var wire 1 8" c_out $end
+$var wire 1 9" s $end
 $upscope $end
 $upscope $end
 $scope begin full_adder[17] $end
-$var parameter 6 2" i $end
+$var parameter 6 :" i $end
 $scope module bit $end
-$var wire 1 3" a $end
-$var wire 1 4" b $end
-$var wire 1 5" c_in $end
-$var wire 1 6" c_out $end
-$var wire 1 7" s $end
+$var wire 1 ;" a $end
+$var wire 1 <" b $end
+$var wire 1 =" c_in $end
+$var wire 1 >" c_out $end
+$var wire 1 ?" s $end
 $upscope $end
 $upscope $end
 $scope begin full_adder[18] $end
-$var parameter 6 8" i $end
+$var parameter 6 @" i $end
 $scope module bit $end
-$var wire 1 9" a $end
-$var wire 1 :" b $end
-$var wire 1 ;" c_in $end
-$var wire 1 <" c_out $end
-$var wire 1 =" s $end
+$var wire 1 A" a $end
+$var wire 1 B" b $end
+$var wire 1 C" c_in $end
+$var wire 1 D" c_out $end
+$var wire 1 E" s $end
 $upscope $end
 $upscope $end
 $scope begin full_adder[19] $end
-$var parameter 6 >" i $end
+$var parameter 6 F" i $end
 $scope module bit $end
-$var wire 1 ?" a $end
-$var wire 1 @" b $end
-$var wire 1 A" c_in $end
-$var wire 1 B" c_out $end
-$var wire 1 C" s $end
+$var wire 1 G" a $end
+$var wire 1 H" b $end
+$var wire 1 I" c_in $end
+$var wire 1 J" c_out $end
+$var wire 1 K" s $end
 $upscope $end
 $upscope $end
 $scope begin full_adder[20] $end
-$var parameter 6 D" i $end
+$var parameter 6 L" i $end
 $scope module bit $end
-$var wire 1 E" a $end
-$var wire 1 F" b $end
-$var wire 1 G" c_in $end
-$var wire 1 H" c_out $end
-$var wire 1 I" s $end
+$var wire 1 M" a $end
+$var wire 1 N" b $end
+$var wire 1 O" c_in $end
+$var wire 1 P" c_out $end
+$var wire 1 Q" s $end
 $upscope $end
 $upscope $end
 $scope begin full_adder[21] $end
-$var parameter 6 J" i $end
+$var parameter 6 R" i $end
 $scope module bit $end
-$var wire 1 K" a $end
-$var wire 1 L" b $end
-$var wire 1 M" c_in $end
-$var wire 1 N" c_out $end
-$var wire 1 O" s $end
+$var wire 1 S" a $end
+$var wire 1 T" b $end
+$var wire 1 U" c_in $end
+$var wire 1 V" c_out $end
+$var wire 1 W" s $end
 $upscope $end
 $upscope $end
 $scope begin full_adder[22] $end
-$var parameter 6 P" i $end
+$var parameter 6 X" i $end
 $scope module bit $end
-$var wire 1 Q" a $end
-$var wire 1 R" b $end
-$var wire 1 S" c_in $end
-$var wire 1 T" c_out $end
-$var wire 1 U" s $end
+$var wire 1 Y" a $end
+$var wire 1 Z" b $end
+$var wire 1 [" c_in $end
+$var wire 1 \" c_out $end
+$var wire 1 ]" s $end
 $upscope $end
 $upscope $end
 $scope begin full_adder[23] $end
-$var parameter 6 V" i $end
+$var parameter 6 ^" i $end
 $scope module bit $end
-$var wire 1 W" a $end
-$var wire 1 X" b $end
-$var wire 1 Y" c_in $end
-$var wire 1 Z" c_out $end
-$var wire 1 [" s $end
+$var wire 1 _" a $end
+$var wire 1 `" b $end
+$var wire 1 a" c_in $end
+$var wire 1 b" c_out $end
+$var wire 1 c" s $end
 $upscope $end
 $upscope $end
 $scope begin full_adder[24] $end
-$var parameter 6 \" i $end
+$var parameter 6 d" i $end
 $scope module bit $end
-$var wire 1 ]" a $end
-$var wire 1 ^" b $end
-$var wire 1 _" c_in $end
-$var wire 1 `" c_out $end
-$var wire 1 a" s $end
+$var wire 1 e" a $end
+$var wire 1 f" b $end
+$var wire 1 g" c_in $end
+$var wire 1 h" c_out $end
+$var wire 1 i" s $end
 $upscope $end
 $upscope $end
 $scope begin full_adder[25] $end
-$var parameter 6 b" i $end
+$var parameter 6 j" i $end
 $scope module bit $end
-$var wire 1 c" a $end
-$var wire 1 d" b $end
-$var wire 1 e" c_in $end
-$var wire 1 f" c_out $end
-$var wire 1 g" s $end
+$var wire 1 k" a $end
+$var wire 1 l" b $end
+$var wire 1 m" c_in $end
+$var wire 1 n" c_out $end
+$var wire 1 o" s $end
 $upscope $end
 $upscope $end
 $scope begin full_adder[26] $end
-$var parameter 6 h" i $end
+$var parameter 6 p" i $end
 $scope module bit $end
-$var wire 1 i" a $end
-$var wire 1 j" b $end
-$var wire 1 k" c_in $end
-$var wire 1 l" c_out $end
-$var wire 1 m" s $end
+$var wire 1 q" a $end
+$var wire 1 r" b $end
+$var wire 1 s" c_in $end
+$var wire 1 t" c_out $end
+$var wire 1 u" s $end
 $upscope $end
 $upscope $end
 $scope begin full_adder[27] $end
-$var parameter 6 n" i $end
+$var parameter 6 v" i $end
 $scope module bit $end
-$var wire 1 o" a $end
-$var wire 1 p" b $end
-$var wire 1 q" c_in $end
-$var wire 1 r" c_out $end
-$var wire 1 s" s $end
+$var wire 1 w" a $end
+$var wire 1 x" b $end
+$var wire 1 y" c_in $end
+$var wire 1 z" c_out $end
+$var wire 1 {" s $end
 $upscope $end
 $upscope $end
 $scope begin full_adder[28] $end
-$var parameter 6 t" i $end
+$var parameter 6 |" i $end
 $scope module bit $end
-$var wire 1 u" a $end
-$var wire 1 v" b $end
-$var wire 1 w" c_in $end
-$var wire 1 x" c_out $end
-$var wire 1 y" s $end
+$var wire 1 }" a $end
+$var wire 1 ~" b $end
+$var wire 1 !# c_in $end
+$var wire 1 "# c_out $end
+$var wire 1 ## s $end
 $upscope $end
 $upscope $end
 $scope begin full_adder[29] $end
-$var parameter 6 z" i $end
+$var parameter 6 $# i $end
 $scope module bit $end
-$var wire 1 {" a $end
-$var wire 1 |" b $end
-$var wire 1 }" c_in $end
-$var wire 1 ~" c_out $end
-$var wire 1 !# s $end
+$var wire 1 %# a $end
+$var wire 1 &# b $end
+$var wire 1 '# c_in $end
+$var wire 1 (# c_out $end
+$var wire 1 )# s $end
 $upscope $end
 $upscope $end
 $scope begin full_adder[30] $end
-$var parameter 6 "# i $end
+$var parameter 6 *# i $end
 $scope module bit $end
-$var wire 1 ## a $end
-$var wire 1 $# b $end
-$var wire 1 %# c_in $end
-$var wire 1 &# c_out $end
-$var wire 1 '# s $end
+$var wire 1 +# a $end
+$var wire 1 ,# b $end
+$var wire 1 -# c_in $end
+$var wire 1 .# c_out $end
+$var wire 1 /# s $end
 $upscope $end
 $upscope $end
 $scope begin full_adder[31] $end
-$var parameter 6 (# i $end
+$var parameter 6 0# i $end
 $scope module bit $end
-$var wire 1 )# a $end
-$var wire 1 *# b $end
-$var wire 1 +# c_in $end
-$var wire 1 ,# c_out $end
-$var wire 1 -# s $end
+$var wire 1 1# a $end
+$var wire 1 2# b $end
+$var wire 1 3# c_in $end
+$var wire 1 4# c_out $end
+$var wire 1 5# s $end
+$upscope $end
 $upscope $end
 $upscope $end
 $upscope $end
@@ -345,259 +355,357 @@ $upscope $end
 $enddefinitions $end
 $comment Show the parameter values. $end
 $dumpall
-b11111 (#
-b11110 "#
-b11101 z"
-b11100 t"
-b11011 n"
-b11010 h"
-b11001 b"
-b11000 \"
-b10111 V"
-b10110 P"
-b10101 J"
-b10100 D"
-b10011 >"
-b10010 8"
-b10001 2"
-b10000 ,"
-b1111 &"
-b1110 ~
-b1101 x
-b1100 r
-b1011 l
-b1010 f
-b1001 `
-b1000 Z
-b111 T
-b110 N
-b101 H
-b100 B
-b11 <
-b10 6
-b1 0
-b0 *
+b11111 0#
+b11110 *#
+b11101 $#
+b11100 |"
+b11011 v"
+b11010 p"
+b11001 j"
+b11000 d"
+b10111 ^"
+b10110 X"
+b10101 R"
+b10100 L"
+b10011 F"
+b10010 @"
+b10001 :"
+b10000 4"
+b1111 ."
+b1110 ("
+b1101 ""
+b1100 z
+b1011 t
+b1010 n
+b1001 h
+b1000 b
+b111 \
+b110 V
+b101 P
+b100 J
+b11 D
+b10 >
+b1 8
+b0 2
 $end
 #0
 $dumpvars
+05#
+04#
+03#
+02#
+01#
+0/#
+0.#
 0-#
 0,#
 0+#
-0*#
 0)#
+0(#
 0'#
 0&#
 0%#
-0$#
 0##
+0"#
 0!#
 0~"
 0}"
-0|"
 0{"
+0z"
 0y"
 0x"
 0w"
-0v"
 0u"
+0t"
 0s"
 0r"
 0q"
-0p"
 0o"
+0n"
 0m"
 0l"
 0k"
-0j"
 0i"
+0h"
 0g"
 0f"
 0e"
-0d"
 0c"
+0b"
 0a"
 0`"
 0_"
-0^"
 0]"
+0\"
 0["
 0Z"
 0Y"
-0X"
 0W"
+0V"
 0U"
 0T"
 0S"
-0R"
 0Q"
+0P"
 0O"
 0N"
 0M"
-0L"
 0K"
+0J"
 0I"
 0H"
 0G"
-0F"
 0E"
+0D"
 0C"
 0B"
 0A"
-0@"
 0?"
+0>"
 0="
 0<"
 0;"
-0:"
 09"
+08"
 07"
 06"
 05"
-04"
 03"
+02"
 01"
 00"
 0/"
-0."
 0-"
+0,"
 0+"
 0*"
 0)"
-0("
 0'"
+0&"
 0%"
 0$"
 0#"
-0""
 0!"
+0~
 0}
 0|
 0{
-0z
 0y
+0x
 0w
 0v
 0u
-0t
 0s
+0r
 0q
 0p
 0o
-0n
 0m
+0l
 0k
 0j
 0i
-0h
 0g
+0f
 0e
 0d
 0c
-0b
 0a
+0`
 0_
 0^
 0]
-0\
 0[
+0Z
 0Y
 0X
 0W
-0V
 0U
+0T
 0S
 0R
 0Q
-0P
 0O
-1M
+0N
+0M
 0L
 0K
-0J
 1I
+0H
 1G
 0F
 0E
-1D
 0C
-1A
-0@
-0?
-1>
+1B
+0A
+1@
+1?
 0=
-1;
+0<
+0;
 0:
 09
-18
-07
+17
+06
 05
 04
-03
-02
-01
-0/
-0.
-0-
-0,
+13
+b1000 1
+b1001 0
+b100 /
+b101 .
+b1001 -
+b1001 ,
 0+
-b0 )
-b111100 (
-b11100 '
-b100000 &
-0%
-b11100 $
-b100000 #
-0"
-b111100 !
+b100 *
+0)
+0(
+b100 '
+b0 &
+b101 %
+b100 $
+b0 #
+b101 "
+b1001 !
 $end
 #10000
-1E
-19
-b10100 )
-b10100 !
-b10100 (
-14
-1@
-1;
-1G
-0A
-0M
-12
-08
-0D
-11
-1=
-0I
-b1010 $
-b1010 '
-b1010 #
-b1010 &
-#20000
-1M
-0;
-1K
-1E
-09
-1?
-b100011 !
-b100011 (
-b111000 )
-04
-1@
-1F
-15
-0A
-0G
-1/
-1:
-02
-18
-0>
-1D
 1+
+14#
+13#
+1.#
+1-#
+1(#
+1'#
+1"#
+1!#
+1z"
+1y"
+1t"
+1s"
+1n"
+1m"
+1h"
+1g"
+1b"
+1a"
+1\"
+1["
+1V"
+1U"
+1P"
+1O"
+1J"
+1I"
+1D"
+1C"
+1>"
+1="
+18"
+17"
+12"
+11"
+1,"
+1+"
+1&"
+1%"
+1~
+1}
+1x
+1w
+1r
+1q
+1l
+1k
+1f
+1e
+1`
+1_
+1Z
+1Y
+1T
+1S
+1A
+1N
+1<
+1M
+1G
+1;
+b1 !
+b1 -
+b1 ,
+b1 0
+16
+1B
+1H
+15
 17
-b10100 $
-b10100 '
-b1111 #
-b1111 &
-#30000
+0=
+0C
+0I
+0O
+0U
+0[
+0a
+0g
+0m
+0s
+0y
+0!"
+0'"
+0-"
+03"
+09"
+0?"
+0E"
+0K"
+0Q"
+0W"
+0]"
+0c"
+0i"
+0o"
+0u"
+0{"
+0##
+0)#
+0/#
+05#
+b111111111111111111111111111111111 1
+14
+1:
+0@
+1F
+1L
+1R
+1X
+1^
+1d
+1j
+1p
+1v
+1|
+1$"
+1*"
+10"
+16"
+1<"
+1B"
+1H"
+1N"
+1T"
+1Z"
+1`"
+1f"
+1l"
+1r"
+1x"
+1~"
+1&#
+1,#
+12#
+b11111111111111111111111111111011 *
+b11111111111111111111111111111011 /
+1)
+b1 #
+b1 &
+#20000

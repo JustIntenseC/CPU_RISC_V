@@ -12,7 +12,6 @@ module adder (
     assign c_out = (a & b) | (b & c_in) | (a & c_in);
 endmodule
 
-
 module adder_32bit (
     input wire [31:0] a,
     input wire [31:0] b,
@@ -71,7 +70,7 @@ module alu(
             4'b0000: result = add_result;     // ADD
             4'b0001: result = add_result;     // SUB
             4'b0010: result = a & b;          // AND
-            4'b0011: result = a | b;          // OR
+            4'b0011: result = a | b;    
             default: result = 32'b0;
         endcase
     end
@@ -79,3 +78,7 @@ module alu(
 endmodule;
 
 // 32 разрядное ариметико-логическое устройство конец
+
+
+
+
